@@ -3,7 +3,7 @@ app = express();
 
 var response;
 
-app.get('/', function (req, res) {
+app.get('/v1', function (req, res) {
 
     response = 'This is version 1 of the app.' + '\n';
 
@@ -12,7 +12,7 @@ app.get('/', function (req, res) {
 
 });
 
-app.get('/version', function (req, res) {
+app.get('/v2', function (req, res) {
 
   response = 'This is version 2 of the app.' + '\n';
 
